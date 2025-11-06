@@ -33,9 +33,13 @@ env:
 
     responses == 0.10.6
 
-    psutil == 5.8.0; python_version < '3.10'
+    ##psutil == 5.8.0; python_version < '3.10'
+    ##psutil == 5.9.0; python_version == '3.10'
+    ##psutil == 5.9.5; python_version >= '3.11'
+    psutil == 5.9.8; python_version < '3.10'
     psutil == 5.9.0; python_version == '3.10'
     psutil == 5.9.5; python_version >= '3.11'
+
 
     numpy == 1.16.2; python_version < '3.8'
     numpy == 1.19.5; python_version == '3.8'
@@ -56,12 +60,14 @@ env:
     seaborn == 0.13.2; python_version >= '3.9'
 
     scikit-learn == 0.20.3; python_version < '3.8'
-    scikit-learn == 0.24.1; python_version >= '3.8' and python_version < '3.11'
+    ##scikit-learn == 0.24.1; python_version >= '3.8' and python_version < '3.11'
+    scikit-learn == 1.2.2; python_version >= '3.8' and python_version < '3.11'
     scikit-learn == 1.3.0; python_version >= '3.11' and python_version < '3.13'
     scikit-learn; python_version >= '3.13'
 
     sklearn-evaluation == 0.4; python_version < '3.9'
-    sklearn-evaluation == 0.5.2; python_version == '3.9'
+    ##sklearn-evaluation == 0.5.2; python_version == '3.9'
+    sklearn-evaluation == 0.7.9; python_version == '3.9'
     sklearn-evaluation == 0.8.1; python_version == '3.10'
     sklearn-evaluation == 0.12.0; python_version >= '3.11'
 
@@ -80,7 +86,8 @@ env:
 
     xgboost == 0.82; python_version < '3.8'
     xgboost == 1.3.3; python_version == '3.8'
-    xgboost == 1.2.0; python_version >= '3.9' and python_version < '3.11'
+    ##xgboost == 1.2.0; python_version >= '3.9' and python_version < '3.11'
+    xgboost == 1.7.5; python_version >= '3.9' and python_version < '3.11'
     xgboost == 1.7.5; python_version >= '3.11'
 
     dryable == 1.0.3; python_version < '3.9'
