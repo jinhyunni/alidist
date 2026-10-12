@@ -16,6 +16,8 @@ build_requires:
 ---
 #!/bin/bash -e
 CPPFLAFS="-I$ABSEIL_ROOT/include"  cmake "$SOURCEDIR"                             \
+    -DPython3_EXECUTABLE="$(command -v python3)" \
+    -DPython_EXECUTABLE="$(command -v python3)" \
     -G Ninja                                  \
     -DCMAKE_FIND_PACKAGE_PREFER_CONFIG=ON     \
     ${ABSEIL_ROOT:+-Dabsl_DIR="$ABSEIL_ROOT"} \
